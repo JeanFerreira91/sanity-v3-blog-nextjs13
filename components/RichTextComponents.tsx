@@ -18,12 +18,19 @@ export const RichTextComponents = {
                 </div>
             );
         },
+        code: ({ value }: any) => (
+            <pre className="bg-[#F7AB0A] p-5 rounded-md">
+                <code>{value.language ? value.language : ""}</code>
+                <br />
+                <code>{value.code}</code>
+            </pre>
+        ),
     },
     list: {
         bullet: ({ children }: any) => (
             <ul className="ml-10 py-5 list-disc space-y-5">{children}</ul>
         ),
-        number: ({ children}: any) => (
+        number: ({ children }: any) => (
             <ol className="mt-lg list-decimal">{children}</ol>
         ),
     },
