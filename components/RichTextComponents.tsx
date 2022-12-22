@@ -18,25 +18,18 @@ export const RichTextComponents = {
                 </div>
             );
         },
-        // code: ({ value }: any) => (
-        //     <pre>
-        //         <code>{value.language ? value.language : ""}</code>
-        //         <br />
-        //         <code>{value.code}</code>
-        //     </pre>
-        // ),
         code: ({ value }: any) => (
             <pre
                 className="bg-gray-800 text-white p-5 rounded-md"
                 style={{ whiteSpace: "pre-wrap" }}
             >
                 {/* Showing the language */}
-                <code className="text-[#F7AB0A] rounded-md font-bold text-xl">
+                <code className="text-[#F7AB0A] font-bold text-xl">
                     {value.language ? value.language : ""}
                 </code>
                 <br />
                 {/* Showing the code */}
-                <code className="rounded-md">
+                <code className="">
                     {value.code}
                 </code>
             </pre>
