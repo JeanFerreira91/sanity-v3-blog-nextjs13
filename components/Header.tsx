@@ -22,7 +22,7 @@ function Header() {
         <div>
             <Link
                 href="/"
-                className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#F7AB0A] flex items-center rounded-full text-center"
+                className="px-5 py-3 text-sm md:text-base bg-[#062C80] text-[#F6F5DA] flex items-center rounded-full text-center"
             >
                 Sign up to the University of Code
             </Link>
